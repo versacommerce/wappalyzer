@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'pp'
+require "awesome_print" #requires gem install awesome_print 
+
+def check(url)
+    puts url
+    cmd = "node src/drivers/npm/cli.js #{url}"
+    value = `#{cmd}`
+    data = JSON.parse(value)
+    ap data
+end
+
+check ARGV[0]

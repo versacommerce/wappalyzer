@@ -458,14 +458,14 @@
     "description": "Acoustic Experience Analytics (Tealeaf), formerly known as IBM Tealeaf Customer Experience on Cloud, is a SaaS-based analytics solution that delivers Tealeaf core capabilities in an managed cloud environment. Tealeaf captures and manages each visitor interaction on your website and mobile applications.",
     "icon": "Acoustic.svg",
     "js": {
-      "TeaLeaf": "",
       "TLT.config.core.modules.TLCookie": "",
-      "TLT_VERSION": ""
+      "TLT_VERSION": "",
+      "TeaLeaf": ""
     },
-    "saas": true,
     "pricing": [
       "poa"
     ],
+    "saas": true,
     "website": "https://acoustic.com/tealeaf"
   },
   "Acquia Campaign Factory": {
@@ -2242,26 +2242,26 @@
       19
     ],
     "description": "Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services (AWS) that provides object storage through a web service interface.",
-    "headers": {
-      "server": "^AmazonS3$",
-      "Content-Security-Policy": "s3\\.[^ ]*amazonaws\\.com"
-    },
     "dom": {
-      "[srcset*='amazonaws.com']": {
-        "attributes": {
-          "srcset": "s3\\.[^ ]*amazonaws\\.com"
-        }
-      },
       "[src*='amazonaws.com']": {
         "attributes": {
           "src": "s3\\.[^ ]*amazonaws\\.com"
         }
+      },
+      "[srcset*='amazonaws.com']": {
+        "attributes": {
+          "srcset": "s3\\.[^ ]*amazonaws\\.com"
+        }
       }
     },
-    "scriptSrc": "s3\\.[^ ]*amazonaws\\.com",
+    "headers": {
+      "Content-Security-Policy": "s3\\.[^ ]*amazonaws\\.com",
+      "server": "^AmazonS3$"
+    },
     "icon": "aws-s3.svg",
     "implies": "Amazon Web Services",
     "saas": true,
+    "scriptSrc": "s3\\.[^ ]*amazonaws\\.com",
     "website": "http://aws.amazon.com/s3/"
   },
   "Amazon SES": {
@@ -2958,11 +2958,11 @@
     "icon": "Apple.svg",
     "js": {
       "ApplePay": "",
+      "applePayButtonClicked": "",
       "braintree.applePay": "",
       "checkout.enabledpayments.applepay": "^true$",
       "dw.applepay": "",
-      "enableApplePay": "",
-      "applePayButtonClicked": ""
+      "enableApplePay": ""
     },
     "website": "https://www.apple.com/apple-pay"
   },

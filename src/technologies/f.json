@@ -446,8 +446,8 @@
     "icon": "Fenicio.svg",
     "js": {
       "_FN.validadorTelefono": "",
-      "fneCommerce.miCompraVisto": "",
-      "fnWishlist.cargarInfoArticulos": ""
+      "fnWishlist.cargarInfoArticulos": "",
+      "fneCommerce.miCompraVisto": ""
     },
     "pricing": [
       "mid",
@@ -563,12 +563,12 @@
     ],
     "description": "FintechOS is a low-code platform for banking and insurance.",
     "icon": "FintechOS.svg",
-    "meta": {
-      "ftos-app-version": "\\sv([\\d\\.]+)\\s\\;version:\\1"
-    },
     "js": {
       "FtosChat": "",
       "ftos.core.getB2CCulture": ""
+    },
+    "meta": {
+      "ftos-app-version": "\\sv([\\d\\.]+)\\s\\;version:\\1"
     },
     "pricing": [
       "poa"

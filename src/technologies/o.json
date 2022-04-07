@@ -211,10 +211,10 @@
     "js": {
       "FitMix.WIDGET_BASE_URL": "static\\.fittingbox\\.com"
     },
-    "saas": true,
     "pricing": [
       "poa"
     ],
+    "saas": true,
     "website": "https://www.ocuco.com/fitmix"
   },
   "Odoo": {
@@ -543,16 +543,16 @@
     ],
     "description": "Oney is an app that gives consumers back the power over their spending and makes split payments universal.",
     "icon": "Oney.svg",
-    "requiresCategory": 6,
     "js": {
-      "isOneyActive": "",
       "OneyMarketplace": "",
+      "isOneyActive": "",
       "openOneyLayer": ""
     },
-    "scriptSrc": "/modules/oney(?:/)?/views/js/front\\.js",
     "pricing": [
       "payg"
     ],
+    "requiresCategory": 6,
+    "scriptSrc": "/modules/oney(?:/)?/views/js/front\\.js",
     "website": "https://www.oney.com"
   },
   "Onfido": {
